@@ -1,0 +1,63 @@
+<html>
+<style>
+.border{
+border:1px solid gray;
+width:350px;
+height:300px;
+background-color:white;
+display:inline-block;
+border:1px solid black;
+}
+</style>
+	<body>
+	<div class="border">
+  	<svg width="350" height="300" style="background-color:black">
+			<image x="100" y="30"width="150" height="150" xlink:href="earth.svg"></image>
+      <path id="theMotionPath" d="M10.6766,-100 c-50.69623,600.00002 400.53474,243.00002 200.37419,-2" opacity="0" />
+			<image width="80" height="90" xlink:href="moon.svg">
+				<animateMotion dur="10s" repeatCount="indefinite">
+					<mpath xlink:href="#theMotionPath"/>
+				</animateMotion>
+			</image>
+
+  	</svg>
+	</div>
+  <div class="border">
+    <svg width="350" height="300">
+
+      <path id="the2MotionPath" d="m-20,-40 c48,-54 249,-38 268.5,-13.95c158.58972,97.95 -233.5,-22.05 -275,38c-13.5,46.95 145.5,-2.05 276,31c85.5,76.95 -176.5,-12.05 -267,20c-30.5,80.95 170.5,45.95 256,31c27.5,-13.05 81.5,21.95 13,36c-86.5,10.95 -235.5,-15.05 -268,2c-78.5,70.95001 180.5,27.95 274,37c135.5,70.95001 -188.5,67 -300,38" opacity="0" />
+
+
+      <!-- Red circle which will be moved along the motion path. -->
+			<image width="80" height="90" xlink:href="bee.svg">
+				<animateMotion dur="20s" repeatCount="indefinite">
+					<mpath xlink:href="#the2MotionPath"/>
+				</animateMotion>
+			</image>
+			<image y="185" x="0"width="100" height="100" xlink:href="hive.svg">
+			</image>
+
+    </svg>
+		<!-- M 100 50 L 200 50 L 200 150 L 300 150 L 300 250 L 400 250 L 400 350 L 500 350  -->
+  </div>
+	<div class="border">
+    <svg width="350" height="300">
+
+      <path id="the3MotionPath" d=" M 0 50 L 50 50 L 50 100 L 100 100 L 100 150 L 150 150 L 150 150 L 200 150 L 200 200" stroke="blue" stroke-width="2" stroke="black" />
+
+
+      <!-- Red circle which will be moved along the motion path. -->
+			<image width="80" height="90" xlink:href="bee.svg">
+				<animateMotion dur="20s" repeatCount="indefinite">
+					<mpath xlink:href="#the3MotionPath"/>
+				</animateMotion>
+			</image>
+			<image y="185" x="0"width="100" height="100" xlink:href="hive.svg">
+			</image>
+
+    </svg>
+		<!-- -->
+  </div>
+
+	</body>
+</html>
