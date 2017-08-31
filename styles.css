@@ -1,0 +1,173 @@
+body{
+	font-family: Verdana;
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.5%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 65.16%; }
+.span_1_of_3 { width: 32.3%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width:  800px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}
+
+body{
+  padding:0;
+  margin:0;
+}
+
+.section div{
+	min-width: 200px;
+
+}
+
+
+.content{
+  margin:10%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+header{
+  min-height: 150px;
+  width:100%;
+  background-color: #020626;
+}
+
+footer{
+  min-height: 150px;
+  background-color: #020626;
+}
+
+header div,
+header svg{
+	display: inline-block;
+}
+#header-design{
+	float: right;
+	margin-top: -130px;
+}
+#logo{
+	margin-left: 20px;
+	margin-top: 15px;
+}
+#logo img{
+	float: right;
+	background-color: white;
+	border-radius: 100px;
+  margin: 5px;
+	height: 100px;
+	width: 100px;
+}
+#earth{
+	float:right;
+	height: 120px;
+	padding-left: 10px;
+}
+#earth2{
+	float:left	;
+	height: 120px;
+	padding-left: 10px;
+}
+#svg-rockets{
+	margin-top: -120px;
+	width: 100%;
+	height: 100%;
+	float: right;
+}
+#name{
+  float: right;
+  color:white;
+  margin-top: -45px;
+  margin-right: 10px;
+  font-size: 30px;
+	text-align: right;
+}
+#col-body{
+	border: 1px solid black;
+	padding: 20px;
+  min-height: 400px;
+	margin-top: 10px;
+	background-color: white;
+
+}
+#col-body3{
+	border-top:0px;
+	padding: 20px;
+  min-height: 500px;
+	border-radius: 5px;
+	margin: 10px;
+
+
+}
+#col-design{
+	border-bottom: 0px;
+	padding: 20px;
+	min-height: 200px;
+
+}
+
+.magborder{
+	border-radius: 5px;
+}
+@media only screen and (max-width: 800px) {
+  .content{
+    margin:10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+	#svg-rockets{
+		width: 100%;
+	}
+
+	header div,
+	header svg{
+		display: block;
+	}
+	#logo{
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	#header-design{
+		float: right;
+		margin-top: -140px;
+	}
+	header{
+	  height: 180px;
+	}
+	#name{
+		border: 1px solid green;
+		margin-top: 60px;
+		width: 90%;
+		text-align: center;
+	}
+	#earth{
+		display: none;
+	}
+}
