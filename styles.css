@@ -150,24 +150,25 @@ header svg{
 		display: block;
 	}
 	#logo{
-		width: 60%;
+		width: 20%;
 		margin: 0 auto;
 	}
 
 	#header-design{
 		float: right;
-		margin-top: -140px;
+		margin-top: 0px;
 	}
 	header{
-	  height: 180px;
+	  height: 250px;
 	}
 	#name{
-		border: 1px solid green;
-		margin-top: 60px;
+		margin-top: 10px;
+		margin-bottom: 0px;
 		width: 90%;
 		text-align: center;
 	}
 	#earth{
-		display: none;
+		float: left;
+		margin-top: -110px
 	}
 }
